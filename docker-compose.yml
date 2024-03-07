@@ -1,0 +1,9 @@
+﻿services:
+  sql_server:
+    image:  mcr.microsoft.com/mssql/server:latest
+    container_name: cars_database_container
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: 'Tacodemanzana1!'
+    ports:
+      - '1433:1433'

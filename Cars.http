@@ -1,0 +1,6 @@
+@Cars_HostAddress = http://localhost:5157
+
+GET {{Cars_HostAddress}}/car
+Accept: application/json
+
+###
