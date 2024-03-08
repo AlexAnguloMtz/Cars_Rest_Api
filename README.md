@@ -2,10 +2,10 @@
 
 ## Overview
 
-This documentation provides details about the REST API for managing cars. The API allows users to perform CRUD operations (Create, Read, Update, Delete) on car resources.
+This documentation provides details about a REST API for managing cars. The API allows users to perform CRUD operations (Create, Read, Update, Delete) on car resources.
 
 ## Base URL:
-http://147.182.251.117:8080
+You can call this REST API with any http client at: http://147.182.251.117:8080
 
 ## Models
 
@@ -90,3 +90,18 @@ Delete a specific car by its ID.
 - **Response**: 
   - Returns status code 200 OK upon successful deletion.
   - Returns 404 NOT FOUND if the car with the specified ID does not exist.
+
+
+## Local Deployment With Docker
+Deploying a local instance is extremely easy: 
+
+- Install Docker and Docker Compose
+- Clone the project
+- Run docker-compose up
+
+These steps will spin the following services:
+### ASP.NET CORE 8.0 REST API
+### SqlServer Instance, with a CarsDatabase and a Cars table, with 20 cars preloaded.
+
+Please wait 200 seconds (aprox.) for the app the fully configured, and then you can call it to 
+http://localhost:5157
