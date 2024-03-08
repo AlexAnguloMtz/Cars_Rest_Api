@@ -7,7 +7,7 @@ services:
       dockerfile: db.Dockerfile
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=Tacodemanzana1!
+      - MSSQL_SA_PASSWORD=Tacodesandia1!
     ports:
       - "1433:1433" 
 

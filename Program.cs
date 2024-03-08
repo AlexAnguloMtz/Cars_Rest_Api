@@ -10,7 +10,7 @@ const string WEB_APP_NAME = "Front-End Web App";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: WEB_APP_NAME, policy => {
-        policy.WithOrigins("http://localhost:4200")
+        policy.WithOrigins("https://cars-frontend-web.vercel.app/")
             .AllowAnyHeader() 
             .AllowAnyMethod(); 
     });
@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 
 // Database Contexts
-builder.Services.AddDbContext<CarContext>(options => options.UseSqlServer("Server=db;Database=CarsDatabase;User Id=SA;Password=Tacodemanzana1!;TrustServerCertificate=true"));
+builder.Services.AddDbContext<CarContext>(options => options.UseSqlServer("Server=db;Database=CarsDatabase;User Id=SA;Password=Tacodesandia1!;TrustServerCertificate=true"));
 
 // Repositories
 builder.Services.AddScoped<ICarRepository, EFCarRepository>();
