@@ -4,6 +4,9 @@
 
 This documentation provides details about the REST API for managing cars. The API allows users to perform CRUD operations (Create, Read, Update, Delete) on car resources.
 
+## Base URL:
+http://147.182.251.117:8080
+
 ## Models
 
 ### Car
