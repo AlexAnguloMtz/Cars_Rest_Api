@@ -8,7 +8,7 @@ namespace Cars.src.Persistence
     [Table("car")]
     public class CarContext(DbContextOptions<CarContext> options) : DbContext(options)
     {
-        public DbSet<Car> Car { get; set; }
+        public DbSet<Car> Cars { get; set; }
 
     }
 }

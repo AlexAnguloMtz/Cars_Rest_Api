@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 
 // Database Contexts
-builder.Services.AddDbContext<CarContext>(options => options.UseSqlServer("Server=localhost,1433;Database=CarsDatabase;User Id=SA;Password=Tacodemanzana1!;TrustServerCertificate=true"));
+builder.Services.AddDbContext<CarContext>(options => options.UseSqlServer("Server=db;Database=CarsDatabase;User Id=SA;Password=Tacodemanzana1!;TrustServerCertificate=true"));
 
 // Repositories
 builder.Services.AddScoped<ICarRepository, EFCarRepository>();

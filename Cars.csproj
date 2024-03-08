@@ -8,12 +8,14 @@
 
   <ItemGroup>
     <None Remove=".py" />
-    <None Remove="Dockerfile" />
+    <None Remove="app.Dockerfile" />
+    <None Remove="db.Dockerfile" />
     <None Remove="setup.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Dockerfile" />
+    <Content Include="app.Dockerfile" />
+    <Content Include="db.Dockerfile" />
   </ItemGroup>
 
   <ItemGroup>
