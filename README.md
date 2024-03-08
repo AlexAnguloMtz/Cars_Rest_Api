@@ -78,7 +78,7 @@ Update details of a specific car by its ID.
 - Returns 200 OK on Success
 - Returns 404 If Car with ID does not exist
 
-- 
+
 ### Delete Car by ID
 
 Delete a specific car by its ID.
