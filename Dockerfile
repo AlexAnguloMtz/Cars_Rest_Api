@@ -1,5 +1,19 @@
-FROM mcr.microsoft.com/mssql/server:latest
-COPY setup.sql .
-ENV ACCEPT_EULA=Y
-ENV SA_PASSWORD=Tacodemanzana1!
-RUN /opt/mssql/bin/sqlservr & sleep 60 && /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Tacodemanzana1! -i setup.sql
+FROM mcr.microsoft.com/mssql/server:2022-latest
+
+# Create a config directory
+USER root
+RUN mkdir -p /usr/config
+WORKDIR /usr/config
+
+# Copy scripts
+COPY ./scripts/setup.sql .
+COPY ./scripts/entrypoint.sh .
+COPY ./scripts/configuration.sh .
+
+RUN chmod +x /usr/config/entrypoint.sh
+RUN chmod +x /usr/config/configuration.sh
+
+#Set the entrypoint script
+ENTRYPOINT ["/bin/bash", "/usr/config/entrypoint.sh"]
+
+

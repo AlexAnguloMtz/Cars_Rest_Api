@@ -1,6 +1,5 @@
-using Cars.Persistence;
-using Cars.Service;
-using Cars.Service.Implementations;
+using Cars.src.Persistence;
+using Cars.src.Service;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

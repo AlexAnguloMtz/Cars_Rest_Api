@@ -1,8 +1,8 @@
-﻿using Cars.Domain;
+﻿using Cars.src.Domain;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Cars.Persistence
+namespace Cars.src.Persistence
 {
 
     [Table("car")]

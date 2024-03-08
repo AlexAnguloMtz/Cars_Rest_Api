@@ -1,7 +1,7 @@
-﻿using Cars.Domain;
-using Cars.Dto;
+﻿using Cars.src.Domain;
+using Cars.src.Dto;
 
-namespace Cars.Service
+namespace Cars.src.Service
 {
     public interface ICarService
     {

@@ -1,6 +1,6 @@
-﻿using Cars.Domain;
+﻿using Cars.src.Domain;
 
-namespace Cars.Persistence
+namespace Cars.src.Persistence
 {
     public class EFCarRepository(CarContext carContext) : ICarRepository
     {

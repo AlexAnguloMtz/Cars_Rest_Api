@@ -1,9 +1,0 @@
-﻿version: '3.8'
-
-services:
-  database:
-    build: 
-        context: .
-    container_name: cars_database_container
-    ports:
-      - '1433:1433'

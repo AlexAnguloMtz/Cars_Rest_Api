@@ -1,9 +1,9 @@
-using Cars.Domain;
-using Cars.Service;
-using Cars.Dto;
 using Microsoft.AspNetCore.Mvc;
+using Cars.src.Service;
+using Cars.src.Domain;
+using Cars.src.Dto;
 
-namespace Cars.Controllers
+namespace Cars.src.Controller
 {
     [ApiController]
     [Route("cars")]

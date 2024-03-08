@@ -1,8 +1,8 @@
-using Cars.Dto;
-using Cars.Domain;
-using Cars.Persistence;
+using Cars.src.Persistence;
+using Cars.src.Domain;
+using Cars.src.Dto;
 
-namespace Cars.Service.Implementations
+namespace Cars.src.Service
 {
     public class CarService(ICarRepository carRepository) : ICarService
     {
@@ -17,7 +17,7 @@ namespace Cars.Service.Implementations
         {
             return _carRepository.GetAll();
         }
-       
+
         public Car Create(CarDto dto)
         {
             Car car = DtoToCar(NewId(), dto);
