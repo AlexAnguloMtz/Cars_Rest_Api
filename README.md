@@ -50,7 +50,7 @@ Retrieve details of a specific car by its ID.
 - **Parameters**: 
   - `id` (string): ID of the car to retrieve.
 - **Response**: 
-  - Returns the Car object with the specified ID - 201 CREATED.
+  - Returns the Car object with the specified ID - 200 OK.
   - Returns 404 NOT FOUND if the car with the specified ID does not exist.
 
 
@@ -62,7 +62,7 @@ Create a new car using the provided information.
 - **Method**: `POST`
 - **Request Body**: 
 	- CarDto. Data Transfer Object (DTO) representing car information.
-- Returns 200 OK
+- Returns 201 CREATED
 
 
 ### Update Car by ID
