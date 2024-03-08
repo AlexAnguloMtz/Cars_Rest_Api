@@ -19,7 +19,7 @@ namespace Cars.src.Controller
             {
                 return NotFound();
             }
-            return car;
+            return Ok(car);
         }
 
         [HttpPost]
@@ -38,7 +38,7 @@ namespace Cars.src.Controller
                 return NotFound();
             }
 
-            return NoContent();
+            return Ok();
         }
 
         [HttpGet]
@@ -56,7 +56,7 @@ namespace Cars.src.Controller
                 return NotFound();
             }
             _carService.DeleteById(id);
-            return NoContent();
+            return Ok();
         }
     }
 }
