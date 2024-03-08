@@ -103,5 +103,5 @@ These steps will spin the following services:
 ### ASP.NET CORE 8.0 REST API
 ### SqlServer Instance, with a CarsDatabase and a Cars table, with 20 cars preloaded.
 
-Please wait 200 seconds (aprox.) for the app the fully configured, and then you can call it to 
+Please wait 200 seconds (aprox.) for the app to be fully configured, and then you can call it to 
 http://localhost:5157
